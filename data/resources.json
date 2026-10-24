@@ -1,0 +1,66 @@
+{
+    "_note": "One entry per file. category: slides|references|past-questions|tutorials. Use path (file in /materials) OR externalUrl (Drive link). The three SAMPLE entries use example.com: delete them when you add real files.",
+    "items": [
+        {
+            "id": "course-slides-mvlg4lmd",
+            "programme": "petroleum-engineering",
+            "level": "level-100",
+            "semester": "sem-1",
+            "course": "engineering mathematics I",
+            "category": "slides",
+            "title": "",
+            "fileType": "pdf",
+            "size": "",
+            "path": "materials/petroleum-engineering/level-100/sem-1/COURSE/slides/COURSE_Slides.pdf",
+            "externalUrl": "",
+            "dateAdded": "2026-10-23"
+        },
+        {
+            "id": "sample-1",
+            "programme": "petroleum-engineering",
+            "level": "level-100",
+            "semester": "sem-1",
+            "course": "MATH109",
+            "category": "slides",
+            "title": "SAMPLE: Differentiation, Week 3",
+            "lecturer": "Dr. Sample",
+            "year": 2026,
+            "fileType": "pdf",
+            "size": "2.4 MB",
+            "path": "",
+            "externalUrl": "https://example.com/sample.pdf",
+            "dateAdded": "2026-10-23"
+        },
+        {
+            "id": "sample-2",
+            "programme": "petroleum-engineering",
+            "level": "level-100",
+            "semester": "sem-1",
+            "course": "MATH109",
+            "category": "past-questions",
+            "title": "SAMPLE: End-of-semester paper",
+            "year": 2025,
+            "examType": "end-of-semester",
+            "fileType": "pdf",
+            "size": "1.1 MB",
+            "path": "",
+            "externalUrl": "https://example.com/sample.pdf",
+            "dateAdded": "2026-10-22"
+        },
+        {
+            "id": "sample-3",
+            "programme": "petroleum-engineering",
+            "level": "level-100",
+            "semester": "sem-1",
+            "course": "PENG151",
+            "category": "references",
+            "title": "SAMPLE: Physical Geology (reference)",
+            "year": 2024,
+            "fileType": "pptx",
+            "size": "8 MB",
+            "path": "",
+            "externalUrl": "https://example.com/sample.pptx",
+            "dateAdded": "2026-10-20"
+        }
+    ]
+}

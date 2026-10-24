@@ -1,0 +1,3 @@
+{"schools":[
+{"id":"energy","name":"School of Energy","programmes":[{"id":"petroleum-engineering","name":"BSc. Petroleum Engineering"},{"id":"renewable-energy-engineering","name":"BSc. Renewable Energy Engineering"}]},
+{"id":"engineering","name":"School of Engineering","programmes":[{"id":"civil-engineering","name":"BSc. Civil Engineering"},{"id":"computer-engineering","name":"BSc. Computer Engineering"},{"id":"mechanical-engineering","name":"BSc. Mechanical Engineering"},{"id":"electrical-engineering","name":"BSc. Electrical Engineering"},{"id":"environmental-engineering","name":"BSc. Environmental Engineering"},{"id":"agricultural-engineering","name":"BSc. Agricultural Engineering"}]}]}

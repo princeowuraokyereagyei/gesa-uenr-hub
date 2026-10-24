@@ -1,0 +1,12 @@
+{"_note":"Add courses as {code,name,credits} under levels > level-X > sem-X. The URL id is the code without spaces (MATH 109 -> MATH109).",
+"programme":"petroleum-engineering","levels":{
+"level-100":{"sem-1":[
+{"code":"UENR 103","name":"Computer Literacy and Information Technology","credits":2},
+{"code":"MATH 109","name":"Engineering Mathematics I","credits":3},
+{"code":"MECH 101","name":"Engineering Technology","credits":2},
+{"code":"MECH 165","name":"Computer Aided Design I","credits":3},
+{"code":"PENG 153","name":"Survey of the Petroleum and Energy Industries","credits":3},
+{"code":"UENR 101","name":"Academic Writing and Communications Skills","credits":2},
+{"code":"PENG 151","name":"Introduction to Geology","credits":2},
+{"code":"UENR 105","name":"Introduction to French I","credits":2}],"sem-2":[]},
+"level-200":{"sem-1":[],"sem-2":[]},"level-300":{"sem-1":[],"sem-2":[]},"level-400":{"sem-1":[],"sem-2":[]}}}

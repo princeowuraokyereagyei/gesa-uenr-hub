@@ -1,0 +1,19 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Admin Helper · GESA-UENR Hub</title><meta name="robots" content="noindex"><link rel="icon" href="assets/favicon.ico"><link rel="stylesheet" href="css/style.css"></head><body>
+<main class="wrap" style="padding-bottom:40px"><p style="margin-top:20px"><a href="index.html">← Back to the Hub</a></p><h1>Admin Helper</h1>
+<p class="mu">Fill in the form. It gives you the file path to upload to and the JSON to paste into <code>data/resources.json</code>. <b>This page is not secure</b> and does not protect anything: anyone can open it. Real access control comes from GitHub repository permissions, because only people you invite can change the repo.</p>
+<form id="f" class="af" style="margin-top:16px" onsubmit="return false"></form>
+<h3 style="margin-top:20px">1. Upload your file to this folder with this name</h3><pre id="o1"></pre>
+<h3>2. Paste inside <code>"items": [ ... ]</code> in data/resources.json (add a comma between entries)</h3><pre id="o2"></pre>
+<button class="btn" id="cp">Copy JSON</button></main>
+<script>
+const L=['level-100','level-200','level-300','level-400'],CATS=['slides','references','past-questions','tutorials'];
+const F=[['programme','Programme',[]],['level','Level',L],['semester','Semester',['sem-1','sem-2']],['course','Course code, no space (e.g. MATH109)'],['category','Category',CATS],['title','Title'],['lecturer','Lecturer (slides)'],['year','Year (e.g. 2026)'],['examType','Exam type (past questions)',['','mid-semester','end-of-semester']],['fileType','File type',['pdf','pptx','docx']],['size','File size (e.g. 2.4 MB)'],['externalUrl','External link (optional, e.g. Google Drive)']];
+const f=document.getElementById('f'),v=()=>Object.fromEntries(F.map(x=>[x[0],f.elements[x[0]].value.trim()]));
+f.innerHTML=F.map(([k,l,o])=>`<label>${l}${o?`<select name="${k}" class="in">${o.map(x=>`<option>${x}</option>`).join('')}</select>`:`<input name="${k}" class="in">`}</label>`).join('');
+fetch('data/programmes.json').then(r=>r.json()).then(d=>{f.elements.programme.innerHTML=d.schools.flatMap(s=>s.programmes).map(p=>`<option value="${p.id}">${p.name}</option>`).join('');out()}).catch(()=>{f.elements.programme.innerHTML='<option>petroleum-engineering</option>';out()});
+function out(){const d=v(),cap={slides:'Slides',references:'Reference','past-questions':'PastQuestion',tutorials:'Tutorial'}[d.category],lec=(d.lecturer||'').replace(/[^A-Za-z0-9]/g,'');
+const name=[d.course||'COURSE',cap,lec,d.year].filter(Boolean).join('_')+'.'+d.fileType,folder=`materials/${d.programme}/${d.level}/${d.semester}/${d.course||'COURSE'}/${d.category}/`;
+const o={id:`${(d.course||'course').toLowerCase()}-${d.category}-${Date.now().toString(36)}`,programme:d.programme,level:d.level,semester:d.semester,course:d.course,category:d.category,title:d.title,lecturer:d.lecturer||undefined,year:+d.year||undefined,examType:d.examType||undefined,fileType:d.fileType,size:d.size,path:d.externalUrl?'':folder+name,externalUrl:d.externalUrl,dateAdded:new Date().toISOString().slice(0,10)};
+document.getElementById('o1').textContent=d.externalUrl?'Using an external link: nothing to upload.':folder+name;document.getElementById('o2').textContent=JSON.stringify(o,null,2)}
+f.addEventListener('input',out);document.getElementById('cp').onclick=()=>navigator.clipboard.writeText(document.getElementById('o2').textContent).then(()=>{cp.textContent='Copied ✓';setTimeout(()=>cp.textContent='Copy JSON',1500)});
+</script></body></html>

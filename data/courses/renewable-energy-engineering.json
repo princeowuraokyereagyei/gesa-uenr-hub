@@ -1,0 +1,22 @@
+{
+ "_note": "Empty template. Add courses as {code,name,credits}.",
+ "programme": "renewable-energy-engineering",
+ "levels": {
+  "level-100": {
+   "sem-1": [],
+   "sem-2": []
+  },
+  "level-200": {
+   "sem-1": [],
+   "sem-2": []
+  },
+  "level-300": {
+   "sem-1": [],
+   "sem-2": []
+  },
+  "level-400": {
+   "sem-1": [],
+   "sem-2": []
+  }
+ }
+}

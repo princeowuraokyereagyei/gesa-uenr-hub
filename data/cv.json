@@ -1,0 +1,14 @@
+{"intro":"Three documents, three jobs. Know which one an employer is asking for.",
+"cols":["CV (Curriculum Vitae)","Resume","Portfolio"],
+"rows":[["What it is","Complete academic and professional history.","Short, targeted summary of your fit for one role.","Collection of work samples that proves your skills."],
+["Length","2+ pages, grows with your career.","1 page (2 for experienced).","As many projects as needed, curated."],
+["Best for","Graduate school, research, scholarships, academia.","Jobs, internships, industrial attachment.","Design, CAD, coding, field and lab projects."],
+["Contains","Education, publications, awards, projects, referees.","Summary, skills, experience, projects, education.","Project photos, drawings, code links, reports, results."]],
+"templates":[{"name":"CV template","type":"DOCX","url":"","desc":"Clean academic CV layout."},{"name":"Resume template","type":"DOCX","url":"","desc":"One-page resume for attachments."},{"name":"Portfolio template","type":"PDF","url":"","desc":"Project showcase layout."}],
+"guides":[
+{"title":"Tailor it to the job or attachment","body":"Read the advert, pick 5 keywords, and mirror them honestly in your summary, skills and project bullets. Reorder so the most relevant items come first."},
+{"title":"Write a strong summary","body":"Two or three lines: who you are, your level and programme, your top skills, and what you want. Example: Level 300 Petroleum Engineering student skilled in CAD and data analysis seeking an industrial attachment."},
+{"title":"List projects and skills","body":"For each project give the title, your role, tools used and a measurable result. Group skills into technical, software and soft skills."},
+{"title":"Use action verbs","body":"Designed, analysed, modelled, built, tested, optimised, led, coordinated, presented. Start every bullet with one."},
+{"title":"Avoid common mistakes","body":"Typos, long paragraphs, unprofessional email addresses, vague claims without numbers, a photo or personal details that the employer did not ask for, and sending one CV to every job."}],
+"checklist":["Contact details and a professional email are correct","Summary is tailored to this role","Every bullet starts with an action verb","Results are quantified where possible","No spelling or grammar errors","Saved and sent as PDF with a clear file name"]}

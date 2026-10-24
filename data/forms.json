@@ -1,0 +1,5 @@
+{"items":[{"title":"SAMPLE: Course material needs survey","description":"Tell us which courses you need materials for. Replace this entry with a real form.","deadline":"2026-11-30","status":"Open","url":"https://forms.google.com"}],
+"guide":[
+{"title":"1. Create a Google Form","body":"Go to forms.google.com, click Blank form, add your questions, then use the Settings tab to limit responses or require sign-in if needed."},
+{"title":"2. Copy the share link","body":"Click Send (top right), choose the link icon, tick Shorten URL, and copy it. Paste it as the url in data/forms.json with a title, description, deadline and status (Open or Closed)."},
+{"title":"3. Download responses as PDF","body":"Responses tab > link to Sheets > in Sheets choose File > Download > PDF. Or in Forms use the three-dot menu > Print all responses and save as PDF."}]}

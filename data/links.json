@@ -1,0 +1,10 @@
+{"items":[
+{"title":"Google Scholar","description":"Search scholarly papers and citations.","url":"https://scholar.google.com","category":"Databases"},
+{"title":"arXiv","description":"Free preprints in engineering, physics and mathematics.","url":"https://arxiv.org","category":"Databases"},
+{"title":"OnePetro","description":"Petroleum engineering technical papers (SPE and partners).","url":"https://onepetro.org","category":"Databases"},
+{"title":"IEEE Xplore","description":"Electrical, electronics and computer engineering literature.","url":"https://ieeexplore.ieee.org","category":"Databases"},
+{"title":"DOAJ","description":"Directory of open-access journals.","url":"https://doaj.org","category":"Journals"},
+{"title":"Zotero","description":"Free reference manager for citations and bibliographies.","url":"https://www.zotero.org","category":"Writing Tools"},
+{"title":"Overleaf","description":"Online LaTeX editor for reports and theses.","url":"https://www.overleaf.com","category":"Writing Tools"},
+{"title":"ISO Standards","description":"Browse international engineering standards.","url":"https://www.iso.org/standards.html","category":"Engineering Standards"},
+{"title":"Ghana Standards Authority","description":"National standards and certification.","url":"https://www.gsa.gov.gh","category":"Engineering Standards"}]}
